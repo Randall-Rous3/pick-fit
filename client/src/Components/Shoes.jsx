@@ -2,14 +2,15 @@ import { useEffect, useState } from 'react'
 
 const Shoes = () => {
     const [image, setImage] = useState()
-    const shirts = ['./closet-assets/shoes_1.jpg', './closet-assets/shoes_2.jpg', './closet-assets/shoes_3.jpg']
+    const shoes = ['./closet-assets/shoes_1.jpg', './closet-assets/shoes_2.jpg', './closet-assets/shoes_3.jpg']
     const getNumber = () => {
-        const ranNum = Math.floor(Math.random() * shirts.length)
-        setImage(shirts[ranNum])
+        const ranNum = Math.floor(Math.random() * shoes.length)
+        setImage(shoes[ranNum])
     }
-    useEffect((
-        getNumber
-    ))
+    useEffect(() => {
+        getNumber()
+
+    })
 
 
 
