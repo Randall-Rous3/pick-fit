@@ -1,0 +1,26 @@
+body{
+  height: 100%;
+
+}
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "mod1 mod2 mod3";
+  justify-content: center;
+
+}
+.fit{
+  height: 16em;
+  width: 16em;
+  display: flex;
+
+  flex-direction: column;
+  grid-area: mod2;
+}
+.article{
+  display: flex;
+}
+button{
+  width: 1em;
+  height: 4em;
+}
